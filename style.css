@@ -1,5 +1,6 @@
 :root {
   --heading: #474747;
+  --background: #f0e9e0;
 }
 body {
   background-color: #f0e9e0;
@@ -19,35 +20,131 @@ nav {
   height: 40px;
 }
 
-.blob-pink-wrapper {
+.blob-pink-wrapper img {
   position: absolute;
   right: 0;
+  animation-name: start;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  z-index: 1;
+  animation-timing-function: ease-out;
 }
 
-.blob-grey-wrapper {
+.blob-grey-wrapper img {
   position: absolute;
+  animation-name: start;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  z-index: 1;
+  animation-timing-function: ease-out;
 }
 .blob-orange-wrapper img {
   position: absolute;
   bottom: 0;
+  animation-name: start;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  z-index: 1;
+  animation-timing-function: ease-out;
 }
 
 .blob-green-wrapper img {
   position: absolute;
   bottom: 0;
   right: 0;
+  animation-name: start;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  z-index: 1;
+  animation-timing-function: ease-out;
 }
 
 header {
   height: 100vh;
 }
 
-header img {
+.header-wrapper {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.header-wrapper img {
   width: 40%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 550px;
+  height: 200px;
+  background-color: var(--background);
+  animation-name: title;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.h1-wrapper {
+  position: relative;
+}
+.overlay-2 {
+  position: absolute;
+  top: 0;
+
+  width: 600px;
+  height: 200px;
+  background-color: var(--background);
+  animation-name: title;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
 }
 
 h1 {
   font-size: 80px;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--heading);
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  font-size: 24px;
+  color: transparent;
+  font-family: arial;
+  animation-name: scroll;
+  animation-duration: 4s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+/* ANIMATIONS */
+@keyframes start {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+@keyframes title {
+  from {
+    background-color: var(--background);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+@keyframes scroll {
+  from {
+    color: transparent;
+  }
+  to {
+    color: var(--grey);
+  }
 }
