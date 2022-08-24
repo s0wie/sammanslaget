@@ -1,0 +1,42 @@
+:root {
+  --heading: #474747;
+  --background: #f0e9e0;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+body {
+  background-color: #f0e9e0;
+  margin: 0;
+}
+nav {
+  background-color: var(--background);
+  height: 40px;
+  width: 100%;
+  z-index: 2;
+  opacity: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.nav-item {
+  margin-right: 60px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+}
