@@ -2,6 +2,18 @@
   --heading: #474747;
   --background: #f0e9e0;
 }
+
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 body {
   background-color: #f0e9e0;
   margin: 0;
@@ -16,8 +28,28 @@ header {
 }
 
 nav {
-  background-color: white;
+  background-color: var(--background);
   height: 40px;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  opacity: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: opacity 2s;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.nav-item {
+  margin-right: 60px;
+}
+
+.show {
+  opacity: 50%;
 }
 
 .blob-pink-wrapper img {
@@ -61,6 +93,8 @@ nav {
 
 header {
   height: 100vh;
+
+  background-color: var(--background);
 }
 
 .header-wrapper {
