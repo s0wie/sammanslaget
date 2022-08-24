@@ -15,3 +15,26 @@ nav {
   background-color: white;
   height: 40px;
 }
+
+.blob-pink-wrapper {
+  position: absolute;
+  right: 0;
+}
+
+.blob-grey-wrapper {
+  position: absolute;
+}
+.blob-orange-wrapper img {
+  position: absolute;
+  bottom: 0;
+}
+
+.blob-green-wrapper img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+header {
+  height: 100vh;
+}
