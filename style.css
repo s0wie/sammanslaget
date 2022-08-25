@@ -123,8 +123,8 @@ header {
   position: absolute;
   top: 0;
   left: 30%;
-  width: 550px;
-  height: 200px;
+  width: 800px;
+  height: 450px;
   background-color: var(--background);
   animation-name: title;
   animation-duration: 2s;
