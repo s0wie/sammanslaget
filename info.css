@@ -112,6 +112,9 @@ main div {
   text-decoration: underline;
 }
 
+span {
+  font-weight: bold;
+}
 @media screen and (max-width: 1000px) {
   .blob-green-wrapper img,
   .blob-orange-wrapper img,
