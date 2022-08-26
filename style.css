@@ -179,12 +179,29 @@ h2 {
 }
 
 .partners {
-  margin-top: 200px;
+  margin-top: 150px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  height: 30vh;
+  background-color: #ffb8b2;
+  text-align: center;
+}
+
+.yrgo {
+  width: 20%;
+  text-align: center;
+}
+
+.org {
+  width: 100%;
+  padding: 5%;
+  padding-top: 0;
 }
 /* ANIMATIONS */
 @keyframes start {

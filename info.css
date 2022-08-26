@@ -108,6 +108,10 @@ main div {
   max-width: 750px;
 }
 
+.highlight {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1000px) {
   .blob-green-wrapper img,
   .blob-orange-wrapper img,

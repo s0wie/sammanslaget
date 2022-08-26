@@ -115,6 +115,10 @@ div img {
   width: 150px;
 }
 
+.highlight {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1000px) {
   .grid-container {
     grid-template-columns: auto;
