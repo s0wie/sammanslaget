@@ -236,6 +236,11 @@ footer {
   }
 }
 
+.mobile {
+  color: #de3831;
+  display: none;
+}
+
 @keyframes title {
   from {
     background-color: var(--background);
@@ -266,5 +271,9 @@ footer {
   .blob-green-wrapper-2,
   .blob-orange-wrapper-2 {
     display: none;
+  }
+
+  .mobile {
+    display: block;
   }
 }
