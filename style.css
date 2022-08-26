@@ -11,6 +11,10 @@ a {
   color: black;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a:hover {
   text-decoration: underline;
 }
@@ -247,5 +251,20 @@ footer {
   }
   to {
     color: var(--grey);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .game {
+    display: none;
+  }
+
+  .blob-green-wrapper-2,
+  .blob-orange-wrapper-2 {
+    display: none;
   }
 }
